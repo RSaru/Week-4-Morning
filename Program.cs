@@ -55,7 +55,7 @@ int averageRain;
 averageRain = ((rainFallOne+rainFallTwo+rainFallThree+rainFallFour+rainFallFive+rainFallSix+rainFallSeven+rainFallEight+rainFallNine+rainFallTen+rainFallEleven+rainFallTwelve)/12);
 
 Console.WriteLine("The average Rainfall in " +country +" is "+ averageRain);
-*/
+
 
 //Declares the array
 int[] rainfallAmt = new int[12];
@@ -79,5 +79,25 @@ rainfallAverage = (rainfallAmt[0] + rainfallAmt[1] + rainfallAmt[2] + rainfallAm
 
 
 Console.WriteLine("The average rainfall that year was: " + rainfallAverage);
+*/
+
+int[] ages = new int [11];
+for (int i = 0; ages.Length; i++)
+{
+    Console.WriteLine("Enter age " + i + ": ");
+    ages[i] = Convert.ToInt32(Console.ReadLine());
+}
+
+Console.Clear();
+
+Array.Sort(ages);
+
+for (int i = 0; i < ages.Length; i++)
+{
+    Console.WriteLine("Age " + 1 + " = " + ages[i]);
+}
+
+
+
 
 Console.ReadLine();
